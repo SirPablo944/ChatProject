@@ -9,8 +9,8 @@ class Message {
     string m_text;
 public:
 
-    Message() = default;
-    Message(const string& from, const string& to, const string& text);
-    ~Message() = default;
-    static Message messageCreator();
+    Message() = default; // конструктор
+    Message(const string& from, const string& to, const string& text); // конструктор
+    ~Message() = default; // деструктор
+    static Message messageCreator(); // метод для создания объектов класса для дальнейшего помещения в вектор
 };

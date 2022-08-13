@@ -8,15 +8,15 @@ class User {
 	string m_password;
 public:
 
-	User() = default;
-    User(const string& name, const string& login, const string& password);
-	~User() = default;
-    string& getName();
+	User() = default; // конструктор
+    User(const string& name, const string& login, const string& password); // конструктор
+	~User() = default; // деструктор
+    string& getName(); // геттеры
     string& getLogin();
     string& getPassword();
-    void setName(const string& name);
+    void setName(const string& name); // сеттеры
     void setLogin(const string& login);
     void setPassword(const string& password);
-    static User userCreator();
+    static User userCreator(); // метод для создания объектов класса для дальнейшего помещения в вектор
 
 };
